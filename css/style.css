@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+body {
+    font-family: Poppins;
+}
+
+header {
+    color: #000;
+    align-items: center;
+}
+
+header .about img {
+    max-width: 20%;
+}
+
+header .about {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    align-items: center;
+}
+
+ul li a:link,
+ul li a:visited{
+    text-decoration: none;
+    color: #000;
+}
+
+@media (max-width: 768px){
+
+ .wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-bottom: 0;
+}
+
+ #sweetheart .doughfield {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 0;
+
+        grid-template-areas: 
+        "i1"
+        "i2"
+        ;
+    }
+
+    .doughfield div:nth-child(1) {
+        grid-area: i1;
+    }
+
+    .doughfield div:nth-child(2) {
+        grid-area: i2;
+    }
+
+
+ #sweetheart .doughpic {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+
+    grid-template-areas:
+    "p1 p1 p1 p1 p1 p1"
+    "p1 p1 p1 p1 p1 p1"
+    "p2 p2 p3 p3 p4 p4"
+    ;
+ }
+
+ .doughpic img:nth-child(1) {
+    grid-area: p1;
+ }
+
+ .doughpic img:nth-child(2) {
+    grid-area: p2;
+ }
+
+ .doughpic img:nth-child(3) {
+    grid-area: p3;
+ }
+
+ .doughpic img:nth-child(4) {
+    grid-area: p4;
+ }
+
+ #sweetheart .wrapper a:link,
+ #sweetheart .wrapper a:visited {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    border: 10px solid #000;
+    justify-content: center;
+ }
+
+  h1 {
+    font-size: 2.027rem;
+ }  
+
+ h2 {
+    font-size: 1.802rem;
+ }
+
+ h3 {
+    font-size: 1.266rem;
+ }
+
+ #behind .behindparagraph {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    padding-bottom: 2em;
+ }
+ 
+ #people .quote {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding-top: 0;
+ }
+
+ #try .cookie {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-template-areas:
+    "c1 c2"
+    "c3 c4"
+    ;
+
+ }
+
+ .cookie div:nth-child(1) {
+    grid-area: c1;
+ }
+
+ .cookie div:nth-child(2) {
+    grid-area: c2;
+ }
+
+ .cookie div:nth-child(3) {
+    grid-area: c3;
+ }
+
+ .cookie div:nth-child(4) {
+    grid-area: c4;
+ }
+}
+
+@media (min-width: 960px) {
+ #sweetheart {
+    max-width: 1200px;
+ }
+
+ #sweetheart .doughfield {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+ }
+
+ #sweetheart .doughpic {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+
+    grid-template-areas: 
+    "p1 p2"
+    "p3 p4"
+    ;
+ }
+
+ .doughpic img:nth-child(1) {
+    grid-area: p1;
+ }
+
+ .doughpic img:nth-child(2) {
+    grid-area: p2;
+ }
+
+ .doughpic img:nth-child(3) {
+    grid-area: p3;
+ }
+
+ .doughpic img:nth-child(4) {
+    grid-area: p4;
+ }
+
+ #sweetheart .wrapper a:link,
+ #sweetheart .wrapper a:visited {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    border: 10px solid #000;
+    justify-content: center;
+ }
+
+ .doughparagraph {
+    padding-top: 0;
+ }
+
+ #behind {
+    background-color: #f8fafc;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+ }
+
+ #behind h1 {
+    align-items: center;
+    padding-top: 1em;
+ } 
+
+ #behind
+
+ .behindparagraph {
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+ }
+
+ #people {
+    background-color: #000;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    padding-top: 1em;
+    max-width: 1200px;
+ }
+
+ #people h1 {
+    padding-bottom: 0;
+ }
+
+ .name{
+    font-style: italic;
+ }
+
+ .quote {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 60px;
+    padding-top: 0;
+    padding: 1em;
+    text-align: left;
+ }
+
+ #try {
+    text-align: center;
+    align-items: center;
+    padding: 1em;
+    max-width: 1200px;
+ }
+
+ .cookie {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+ }
+
+ .flavour {
+    background-color: #f8fafc;
+ }
+
+ h1 {
+    font-size: 2.027rem;
+ }
+
+ h2 {
+    font-size: 1.802rem;
+ }
+
+ h3 {
+    font-size: 1.266rem;
+ }
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+   
